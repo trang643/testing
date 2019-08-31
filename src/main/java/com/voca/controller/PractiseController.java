@@ -18,7 +18,9 @@ import com.voca.service.WordService;
 public class PractiseController {
 
 	private WordService wordService;
-
+//12345 abcde
+	
+	
 	@Autowired(required = true)
 	@Qualifier(value = "wordService")
 	public void setWordService(WordService ps) {
@@ -48,8 +50,9 @@ public class PractiseController {
 	public Practise getPractiseModel() {
 		return new Practise();
 	}
-
 	//added today
+	//added afternoon
+	//hello
 }
 
 

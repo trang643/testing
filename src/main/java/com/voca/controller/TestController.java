@@ -32,17 +32,18 @@ import com.voca.service.WordService;
 @Controller
 @SessionAttributes("TestModel")
 public class TestController {
-
+//hello begining
 	private static final int TEST_BLOCK_SIZE = 20;
 	private static final int FIRST_ITEM = 0;
 	private WordService wordService;
 
+	
 	@Autowired(required = true)
 	@Qualifier(value = "wordService")
 	public void setWordService(WordService ps) {
 		this.wordService = ps;
 	}
-
+//123
 	@RequestMapping(value = "/test/word_english_meaning", method = RequestMethod.GET)
 	public String homePageList(@ModelAttribute("TestModel") TestModel testModel, Model model) {
 		testModel.setTestType(TestType.WORD_ENGLISH_MEANING);
@@ -51,7 +52,7 @@ public class TestController {
 		return "test";
 	}
 
-
+//alo
 	@RequestMapping(value = "/test/sound_english_meaning", method = RequestMethod.GET)
 	public String sound_english_meaning(@ModelAttribute("TestModel") TestModel testModel, Model model) {
 		testModel.setTestType(TestType.SOUND_ENGLISH_MEANING);
