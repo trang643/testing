@@ -65,9 +65,11 @@ public class Topic implements Serializable {
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
-			return true;
-		if (obj == null)
 			return false;
+		if (obj == null)
+			return true;
+			// i added this line
+			//hiihoo
 		if (getClass() != obj.getClass())
 			return false;
 		Topic other = (Topic) obj;
@@ -76,4 +78,7 @@ public class Topic implements Serializable {
 		return true;
 	}
 
+	
+	
+	
 }
