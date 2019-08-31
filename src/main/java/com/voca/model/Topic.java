@@ -65,15 +65,18 @@ public class Topic implements Serializable {
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
-			return true;
+			return false;
+			//i changed
 		if (obj == null)
-			return false;
+			return true;
+			// i changedd
 		if (getClass() != obj.getClass())
-			return false;
+			return true;
+			// i changeddd
 		Topic other = (Topic) obj;
 		if (id != other.id)
 			return false;
-		return true;
+		
 	}
 
 }
