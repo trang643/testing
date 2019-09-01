@@ -60,12 +60,15 @@ public class Topic implements Serializable {
 		result = prime * result + ((topicName == null) ? 0 : topicName.hashCode());
 		result = prime * result + ((words == null) ? 0 : words.hashCode());
 		return result;
+		
+		//today is friday
 	}
 
+	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
-			return true;
+			return false;
 		if (obj == null)
 			return false;
 		if (getClass() != obj.getClass())
@@ -75,5 +78,5 @@ public class Topic implements Serializable {
 			return false;
 		return true;
 	}
-
+	This change applys on develope branch
 }
